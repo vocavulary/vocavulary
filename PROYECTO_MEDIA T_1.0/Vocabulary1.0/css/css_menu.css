@@ -1,0 +1,125 @@
+ 
+
+
+
+body {
+  background-image: url("../imagenes/fondo2.jpg"); /*fondo en link porque no quiere dejar con imagen*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+form {
+  position: relative;
+  width: 250px;
+  border: 2px solid black;
+  margin: 100px;
+  padding: 100px;
+  background-color: #B86BF4;
+  border-radius: 20px;
+  left: 370px;
+  height: 100px;
+}
+.container{
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+div.hovera{
+
+  padding: 15px 50px;
+  margin: 15px 0 0 10px;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight:bolder;
+  border: 3px solid palevioletred;
+  position: relative;
+  transition: 0.8s all ease;
+  border-radius: 10px;                       /*10 o 20 o 30 ?*/
+  top: -50px;
+}
+div.hovera::before{
+  content:"";
+  background: rgb(155, 64, 240);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -2;
+  transition: all 0.8s ease;
+}
+/*-------------------------------BOTON 1-2 -------------------------------*/
+.hovera::before{
+  width: 0;
+  height:100%;
+}
+.hovera:hover::before{
+  height:100%;
+  width:100%;
+}
+
+/*---------------------------------BOTON 3-----------------------------*/
+.exit{
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+div.boton{
+
+  padding: 10px 50px;
+  margin: 30px 0 0 20px;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight:bolder;
+  border: 3px solid orangered;
+  position: relative;
+  transition: 0.8s all ease;
+  border-radius: 10px;                       /*10 o 20 o 30 ?*/
+}
+div::before{
+  content:"";
+  background: rgb(255, 5, 5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -2;
+  transition: all 0.8s ease;
+}
+
+.boton::before{
+  width: 0;
+  height:100%;
+}
+.boton:hover::before{
+  height:100%;
+  width:100%;
+}
+
+
+.img2  {
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  width: 300px;
+  height: 225px;
+  border-radius: 20px;
+}
+
+.img3  {
+  position: absolute;
+  top: 50%;
+  right: 70%;
+  width: 300px;
+  height: 225px;
+  border-radius: 20px;
+}
